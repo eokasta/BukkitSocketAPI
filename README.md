@@ -3,7 +3,7 @@
 
 * To initiate connection to the ServerSocket:
 ```java
-SocketNotification socketNotification = new SocketNotification(*Your JavaPlugin*, *Your Port*);
+SocketNotification socketNotification = new SocketNotification(/* your JavaPlugin */, /* your port */);
 socketNotification.init();
 ```
 
