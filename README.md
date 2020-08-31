@@ -2,18 +2,18 @@
 ### A simple Socket API with Bukkit.
 
 * To initiate connection to the ServerSocket:
-```
+```java
 SocketNotification socketNotification = new SocketNotification(*Your JavaPlugin*, *Your Port*);
 socketNotification.init();
 ```
 
 * To send a message to ServerSocket:
-```
+```java
 socketNotification.send("Message");
 ```
 
 * To listen to the message that was sent:
-```
+```java
 @EventHandler
 public void onListen(SocketNotificationEvent event) {
     System.out.println(event.getMessage());
@@ -21,6 +21,6 @@ public void onListen(SocketNotificationEvent event) {
 ```
 
 * To close connection to the ServerSocket:
-```
+```java
 socketNotification.close();
 ```
